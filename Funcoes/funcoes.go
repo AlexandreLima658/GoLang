@@ -25,7 +25,15 @@ func main() {
 	resultado := f("Texto da função")
 	fmt.Println(resultado)
 
+	// retornar multiplos valores
 	resultadoSoma, resultadoSubtracao := calculosMatematicos(10, 15)
 	fmt.Println(resultadoSoma, resultadoSubtracao)
 
+	//retornar multiplos valores ignorando o resultadoSubtracao
+	resultadoSoma, _ = calculosMatematicos(12, 5)
+	fmt.Println(resultadoSoma)
+
+	// retorna multiplos valores ignorando o resultadoSoma
+	 _ ,resultadoSubtracao = calculosMatematicos(12, 5)
+	fmt.Println(resultadoSubtracao)
 }
