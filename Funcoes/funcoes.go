@@ -15,7 +15,7 @@ func main() {
 		return txt
 	}
 
-	f("Texto da funcao 1")
+	resultado := f("Texto da função")
+	fmt.Println(resultado)
 
-	
 }
